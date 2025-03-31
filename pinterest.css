@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lugrasimo&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:"tinora", serif;
+    background-color: #ffffff;
+}
+header {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+.container {
+    font-family: 'Tinora', serif;
+    font-size: 26px;
+    display:inline-flex;
+    flex-direction: row;
+    justify-content: center;
+}
+header h1 {
+    font-size: 1.2rem;
+    margin-right: auto;
+    color: #333;
+    line-height: 60px;
+    color: dodgerblue;
+    font-family:'Tinora', serif;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+header nav ul li {
+    margin: 0 10px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    padding: 20px 0;
+    display: flex;
+    color: cornflowerblue;
+    font-family: 'Tinora', seri;
+}
+header nav ul li a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #333;
+}
+.logo{
+    text-align: center;
+
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 15%;
+    box-shadow: 5px 5px 10px #8fc4ff;
+}
+.sub-nav {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    align-items: center;
+}
+.sub-nav button {
+    background: none;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    align-items: center;
+}
+.sub-nav button:hover {
+    text-decoration: underline;
+}
+.hashtag-section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+.hashtag-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+.card {
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 120%;
+    padding-bottom: 125%;
+}
+.img-wrapper img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+.price-tag {
+    position: absolute;
+    top: 200px;
+    left:180px;
+    background-color: rgba(255,255,255,0.9);
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+.price-tag span {
+    display: block;
+    line-height: 1.2;
+}
+.shop-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255,255,255,0.9);
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+.user-info {
+    padding: 10px;
+    text-align: left;
+}
+.user-info p {
+    margin: 3px 0;
+    font-size: 0.85rem;
+    color: #333;
+}
+.user-info p:nth-child(1) {
+    font-weight: bold;
+}
+.featured-outfits {
+    max-width: 1200px;
+    margin: 0 auto 20px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+.featured-card {
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.featured-card .img-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 125%;
+    background-color: #ccc;
+}
+.featured-card .img-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.price-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255,255,255,0.9);
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+.shop-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255,255,255,0.9);
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+.featured-card .user-info {
+    padding: 10px;
+}
+.featured-card .user-info p {
+    margin: 4px 0;
+    font-size: 0.85rem;
+    color: #333;
+}
+.featured-card .user-info p:first-child {
+    font-weight: bold;
+}
+main {
+    padding: 50px;
+    min-height: 70vh;
+}
+footer {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    box-shadow: 0 -1px 2px rgba(0,0,0,0.1);
+    font-family: sans-serif;
+}
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.footer-top-left{
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+.footer-top-left h2{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+.footer-top-left p{
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+.download-link{
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.footer-top-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.qr-code {
+    width: 100px;
+    height: auto;
+}
+.app-preview {
+    width: 180px;
+    height: auto;
+}
+.footer-divider {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 10px 0;
+}
+.footer-middle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.footer-brand-links,
+.footer-nav-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+.footer-brand-links li a,
+.footer-nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+}
+.footer-bottom {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #777;
+    line-height: 1.4;
+}
